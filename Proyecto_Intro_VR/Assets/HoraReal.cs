@@ -20,7 +20,6 @@ public class HoraReal : MonoBehaviour
         hourHand.localRotation = Quaternion.Euler(hourRotation + 90f, 0, -90f);
         minuteHand.localRotation = Quaternion.Euler(minuteRotation + 90f, 0, -90f);
         secondHand.localRotation = Quaternion.Euler(secondRotation + 90f, 0, -90f);
-        Debug.Log($"{currentTime}, {hourRotation}, {minuteRotation}, {secondRotation}");
 
     }
 }
