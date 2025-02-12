@@ -9,7 +9,6 @@ public class RotarReticula : MonoBehaviour
     public void Update()
     {
         transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
-        Debug.Log("Retícula en: " + transform.position);
     }
 }
 
