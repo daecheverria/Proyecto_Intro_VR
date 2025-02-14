@@ -39,7 +39,6 @@ public class OnVelocity : MonoBehaviour
     private void CheckVelocity()
     {
         float speed = rigidBody.velocity.magnitude;
-        Debug.Log(speed);
         hasBegun = HasVelocityBegun(speed);
 
         if (HasVelcoityEnded(speed))
