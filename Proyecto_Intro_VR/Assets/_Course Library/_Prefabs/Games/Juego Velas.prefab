@@ -16074,7 +16074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PermittedDisplacementAxes: 7
+  m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
   m_AllowOneHandedScaling: 1
@@ -32492,10 +32492,10 @@ Transform:
   - {fileID: 6725397390492154061}
   - {fileID: 1566305202385258257}
   - {fileID: 3069915518294824398}
+  - {fileID: 4570308592343331008}
   - {fileID: 835496118382663478}
   - {fileID: 3530619684867771451}
   - {fileID: 127388139532151398}
-  - {fileID: 4570308592343331008}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5715198395846775552
@@ -32520,6 +32520,7 @@ MonoBehaviour:
   - {fileID: 8482601593659482125}
   - {fileID: 4413588291247955536}
   - {fileID: 3315744590983026052}
+  NumeroObjetivo: 10
 --- !u!1 &6592984951377655377
 GameObject:
   m_ObjectHideFlags: 0
@@ -37483,7 +37484,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.68121475, y: 0.68121517, z: -0.18959461, w: -0.18959521}
   m_LocalPosition: {x: 0.10326244, y: 0.054633193, z: 1.0345129}
-  m_LocalScale: {x: 1.0000002, y: 0.99999976, z: 1.0000002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2479228572775665041}
@@ -37768,7 +37769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PermittedDisplacementAxes: 7
+  m_PermittedDisplacementAxes: -1
   m_ConstrainedAxisDisplacementMode: 1
   m_TwoHandedRotationMode: 1
   m_AllowOneHandedScaling: 1
