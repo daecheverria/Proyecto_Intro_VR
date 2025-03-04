@@ -22,6 +22,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3116faa3a5601d74095ffaa92fb6a2b9
+    m_Address: Assets/Idiomas/Tablas/Easter Eggs Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c05a321e8e9b93b4dbf696c80261d19f, type: 2}
   m_SchemaSet:

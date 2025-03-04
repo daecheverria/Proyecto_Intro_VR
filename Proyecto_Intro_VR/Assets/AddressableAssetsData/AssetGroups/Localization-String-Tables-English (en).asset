@@ -17,6 +17,12 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: a6fd60ba353ae30498452e6ffcf0bf54
   m_SerializeEntries:
+  - m_GUID: 786a9ecb3ae30984fbed8df1942673b7
+    m_Address: Easter Eggs_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cbfa465e5112a7c409932435515c7b40
     m_Address: UI Text_en
     m_ReadOnly: 1
