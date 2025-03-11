@@ -7,23 +7,29 @@ public class Pad : MonoBehaviour
     public GameObject Carnet;
     public GameObject PuertaC;
     public GameObject PuertaA;
+    [SerializeField] int id;
+     [SerializeField] PadsSO pads;
+    private bool estado;
 
-    // Start is called before the first frame update
+
+    void Awake()
+    {
+        estado = pads.GetCheckboxValue(id);
+    }
     void Start()
     {
-        PuertaC.SetActive(true);
-        PuertaA.SetActive(false);
+        PuertaC.SetActive(!estado);
+        PuertaA.SetActive(estado);
     }
 
-    void OnTriggerEnter(Collider other)
+   void OnTriggerEnter(Collider other)
     {
-        Debug.Log("El objeto seleccionado ha entrado en el trigger.");
         if (other.gameObject == Carnet)
         {
-            PuertaA.SetActive(true);
-            PuertaC.SetActive(false);
-            Debug.Log("El objeto seleccionado ha entrado en el trigger.");
+            estado = !estado;
+            pads.SetCheckboxValue(id, estado); 
+            PuertaA.SetActive(estado);
+            PuertaC.SetActive(!estado);
         }
-        Debug.Log("El objeto seleccionado ha entrado en el trigger.");
     }
 }
