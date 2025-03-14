@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class JuegoVelas : MonoBehaviour
 {
     public int cont = 0;
     public GameObject[] velas = new GameObject[8];
     public int NumeroObjetivo = 10;
+    public TextMeshPro Texto;
 
     void Start()
     {
@@ -54,7 +56,8 @@ public class JuegoVelas : MonoBehaviour
                         if (flameTransform.gameObject.activeSelf)
                         {
                             cont += (int)Mathf.Pow(2, i);
-                             
+                            Texto.text = "Objetivo:\t" + NumeroObjetivo + "\r\n\r\nContador:\t" + cont.ToString();
+
                         }
                     }
                     else

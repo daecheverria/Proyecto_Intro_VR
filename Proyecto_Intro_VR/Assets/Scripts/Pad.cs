@@ -24,7 +24,7 @@ public class Pad : MonoBehaviour
 
    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Carnet)
+        if (other.gameObject == Carnet && !estado)
         {
             estado = !estado;
             pads.SetCheckboxValue(id, estado); 
