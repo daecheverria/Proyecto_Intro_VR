@@ -9,9 +9,11 @@ public class EasterEgg : MonoBehaviour
     [SerializeField] string nombre;
     [SerializeField] GameObject easterEggcanvas;
     private int displayTime = 3;
+    [SerializeField] Transform playerCamara;
+    [SerializeField] float distance = 0.1f;
     private void OnTriggerEnter(Collider other)
     {
-         Debug.Log("aaaa");
+         Debug.Log("aaa");
         if (other.CompareTag("Player"))
         {
             Debug.Log("Easter Egg encontrado: " + nombre);
@@ -24,10 +26,26 @@ public class EasterEgg : MonoBehaviour
             }
         }
     }
+    private void Start()
+    {
+        playerCamara = Camera.main?.transform;
+        if (playerCamara == null)
+        {
+            Debug.Log("No camara");
+            return;
+        }
+    }
+ 
 
     public void ShowCanvas(string tituloKey, string descripcionKey)
     {
+       
+        if (playerCamara == null) return;
+
         GameObject canvasInstance = Instantiate(easterEggcanvas, transform);
+        canvasInstance.transform.localPosition = Vector3.forward * distance; 
+        canvasInstance.transform.rotation = playerCamara.rotation; 
+        canvasInstance.transform.Rotate(0, 180, 0); 
 
         Transform panelTransform = canvasInstance.transform.Find("Panel");
         if (panelTransform == null)

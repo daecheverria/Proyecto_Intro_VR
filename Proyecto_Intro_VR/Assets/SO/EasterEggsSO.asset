@@ -17,3 +17,15 @@ MonoBehaviour:
     nombrekey: EE1N
     descripcionkey: EE1D
     completado: 1
+  - nombre: A1
+    nombrekey: EE2N
+    descripcionkey: EE2D
+    completado: 0
+  - nombre: Piscina
+    nombrekey: EE3N
+    descripcionkey: EE3D
+    completado: 0
+  - nombre: Mate
+    nombrekey: EE4N
+    descripcionkey: EE4D
+    completado: 0

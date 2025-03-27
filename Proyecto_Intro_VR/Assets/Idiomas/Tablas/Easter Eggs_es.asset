@@ -26,6 +26,18 @@ MonoBehaviour:
     m_Localized: El flipante hormiga hombre
     m_Metadata:
       m_Items: []
+  - m_Id: 8316490659729408
+    m_Localized: Parece que te dormiste y quedaste atrapado en el A1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8316734906634240
+    m_Localized: "Busca como entrar al departamento de matem\xE1tica para huir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8317155872149504
+    m_Localized: "Puede que alg\xFAn sal\xF3n haya quedado abierto"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
